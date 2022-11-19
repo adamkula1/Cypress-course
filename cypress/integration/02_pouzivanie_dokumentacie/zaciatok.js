@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 it('otvorenie aplikácie', () => {
 
   cy
