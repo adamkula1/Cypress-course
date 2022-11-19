@@ -1,4 +1,8 @@
-it('otvorenie trello boardu', () => {
+it("otvorenie trello boardu", () => {
+
+  // cy.visit('http://localhost:3000/board/37104747111')
+  cy.visit("/board/37104747111");
+
 
   /* 
   úloha #1: vyskúšaj si otvorenie stránky pomocou príkazu .visit()
@@ -8,6 +12,4 @@ it('otvorenie trello boardu', () => {
   alebo trello board z úlohy #2
   
   */
-
-
 });
