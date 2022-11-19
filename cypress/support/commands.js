@@ -24,6 +24,10 @@ Cypress.Commands.add('loginUser', (email, password) => {
 
 })
 
-Cypress.Commands.add("getByData", (selector) => {
+Cypress.Commands.add("getByDataCy", (selector) => {
   return cy.get(`[data-cy=${selector}]`)
+})
+
+Cypress.Commands.add("getByData", (selector) => {
+  return cy.get(`[data-id=${selector}]`)
 })
