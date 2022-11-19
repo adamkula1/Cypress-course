@@ -1,6 +1,13 @@
 /// <reference types="cypress" />
 
-it('oznacovanie elementov', () => {
+it("oznacovanie elementov", () => {
+  cy.visit("/");
+
+  cy.get(".background_title").should("be.visible");
+  cy.contains("My Boards");
+
+  cy.get(".board_title").should("be.visible");
+  cy.contains("First-Board");
 
   /* 
 
@@ -10,5 +17,4 @@ it('oznacovanie elementov', () => {
   úloha #4: vytvor si board a označ jeho názov pomocou príkazu .contains()
   
   */
-
-})
+});
