@@ -1,32 +1,38 @@
 /// <reference types="cypress" />
 
-beforeEach( () => {
+beforeEach(() => {
+  cy.server();
 
-  cy
-    .visit('/');
+  cy.route("/api/boards").as("boardList");
 
+  cy.route("POST", "/api/boards").as("createBoard");
+
+  cy.visit("/");
 });
 
-it.only('nacitanie zoznamu boardov', () => {
+it("nacitanie zoznamu boardov", () => {
+  cy.wait("@boardList");
 
-  cy
-    .get('.board_item')
-    .should('have.length', 0)
+  cy.get(".board_item").should("have.length", 4);
+});
 
-})
+it.only("vytvorenie noveho boardu", () => {
+  cy.get("#new-board").click();
 
-it('vytvorenie noveho boardu', () => {
+  cy.get(".board_addBoard").type("nova zahrada");
 
-  cy
-    .get('#new-board')
-    .click()
+  cy.contains("Save").click();
 
-  cy
-    .get('.board_addBoard')
-    .type('nova zahrada')
-  
-  cy
-    .contains('Save')
-    .click()
+  // cy.wait("@createBoard")
+  // // .its('status')
+  // // .should('eq', 201)
+  // .its('response.body.name')
+  // .should('eq', 'nova zahrada')
 
-})
+  cy.wait("@createBoard").then((board) => {
+    expect(board.status).to.eq(201);
+    expect(board.request.body.name).to.eq("nova zahrada");
+    expect(board.response.body.name).to.eq("nova zahrada");
+    expect(board.response.body.starred).to.be.false;
+  });
+});

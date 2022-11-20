@@ -27,6 +27,13 @@
       "id": 7115510273,
       "starred": false,
       "created": "2022-11-20"
+    },
+    {
+      "name": "nova zahrada",
+      "user": 0,
+      "id": 34036722067,
+      "starred": false,
+      "created": "2022-11-20"
     }
   ],
   "tasks": [
@@ -159,6 +166,16 @@
       "id": 6587043111,
       "created": "2022-11-20",
       "deadline": "2022-11-23"
+    },
+    {
+      "boardId": 34036722067,
+      "description": "",
+      "completed": true,
+      "listId": 74829456755,
+      "title": "toto je taaask",
+      "id": 1407270131,
+      "created": "2022-11-20",
+      "deadline": "2022-11-23"
     }
   ],
   "users": [],
@@ -191,6 +208,12 @@
       "boardId": 7115510273,
       "title": "09 task",
       "id": 12832354193,
+      "created": "2022-11-20"
+    },
+    {
+      "boardId": 34036722067,
+      "title": "sklenik",
+      "id": 74829456755,
       "created": "2022-11-20"
     }
   ]
