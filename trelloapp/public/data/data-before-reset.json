@@ -1,0 +1,234 @@
+{
+    "boards": [
+        {
+            "name": "First-Board",
+            "user": 0,
+            "id": 37104747111,
+            "starred": false,
+            "created": "2022-11-19"
+        },
+        {
+            "name": "Second-Board",
+            "user": 0,
+            "id": 37754080283,
+            "starred": false,
+            "created": "2022-11-19"
+        },
+        {
+            "name": "Board task #07",
+            "user": 0,
+            "id": 82501116053,
+            "starred": false,
+            "created": "2022-11-20"
+        },
+        {
+            "name": "Board task #09",
+            "user": 0,
+            "id": 7115510273,
+            "starred": false,
+            "created": "2022-11-20"
+        },
+        {
+            "name": "nova zahrada",
+            "user": 0,
+            "id": 34036722067,
+            "starred": false,
+            "created": "2022-11-20"
+        },
+        {
+            "name": "board vytcoreny cez api",
+            "user": 0,
+            "id": 78742539027,
+            "starred": false,
+            "created": "2022-11-20"
+        },
+        {
+            "name": "novy projekt",
+            "user": 0,
+            "id": 16334554753,
+            "starred": false,
+            "created": "2022-11-20"
+        }
+    ],
+    "tasks": [
+        {
+            "boardId": 37104747111,
+            "description": "",
+            "completed": true,
+            "listId": 24615640523,
+            "title": "Task first board",
+            "id": 64085956981,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 37754080283,
+            "description": "",
+            "completed": true,
+            "listId": 20320623338,
+            "title": "Task first yeeah",
+            "id": 64632077193,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 37754080283,
+            "description": "",
+            "completed": false,
+            "listId": 20320623338,
+            "title": "Task second yeeah",
+            "id": 83284729099,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 37754080283,
+            "description": "",
+            "completed": false,
+            "listId": 20320623338,
+            "title": "Task third",
+            "id": 32751220720,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 82501116053,
+            "description": "",
+            "completed": false,
+            "listId": 24588109879,
+            "title": "mlieko",
+            "id": 42879661458,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 82501116053,
+            "description": "",
+            "completed": false,
+            "listId": 12565371934,
+            "title": "ponožky",
+            "id": 32932752702,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 82501116053,
+            "description": "",
+            "completed": false,
+            "listId": 12565371934,
+            "title": "nabíjačku",
+            "id": 4199289888,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 82501116053,
+            "description": "",
+            "completed": false,
+            "listId": 12565371934,
+            "title": "mlieko",
+            "id": 6770005738,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 82501116053,
+            "description": "",
+            "completed": false,
+            "listId": 12565371934,
+            "title": "Rožok",
+            "id": 85569762338,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 7115510273,
+            "description": "",
+            "completed": true,
+            "listId": 12832354193,
+            "title": "vajce",
+            "id": 78167208909,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 7115510273,
+            "description": "",
+            "completed": false,
+            "listId": 12832354193,
+            "title": "chlieb",
+            "id": 71392713486,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 7115510273,
+            "description": "",
+            "completed": false,
+            "listId": 12832354193,
+            "title": "voda",
+            "id": 18069003034,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 7115510273,
+            "description": "",
+            "completed": false,
+            "listId": 12832354193,
+            "title": "pes",
+            "id": 6587043111,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        },
+        {
+            "boardId": 34036722067,
+            "description": "",
+            "completed": false,
+            "listId": 74829456755,
+            "title": "toto je taaask",
+            "id": 1407270131,
+            "created": "2022-11-20",
+            "deadline": "2022-11-23"
+        }
+    ],
+    "users": [],
+    "lists": [
+        {
+            "boardId": 37104747111,
+            "title": "List 01",
+            "id": 24615640523,
+            "created": "2022-11-20"
+        },
+        {
+            "boardId": 37754080283,
+            "title": "List first",
+            "id": 20320623338,
+            "created": "2022-11-20"
+        },
+        {
+            "boardId": 82501116053,
+            "title": "nakúpiť",
+            "id": 24588109879,
+            "created": "2022-11-20"
+        },
+        {
+            "boardId": 82501116053,
+            "title": "zabaliť",
+            "id": 12565371934,
+            "created": "2022-11-20"
+        },
+        {
+            "boardId": 7115510273,
+            "title": "09 task",
+            "id": 12832354193,
+            "created": "2022-11-20"
+        },
+        {
+            "boardId": 34036722067,
+            "title": "sklenik",
+            "id": 74829456755,
+            "created": "2022-11-20"
+        }
+    ]
+}
