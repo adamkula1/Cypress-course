@@ -6,6 +6,20 @@
       "id": 81199267822,
       "starred": false,
       "created": "2022-11-21"
+    },
+    {
+      "name": "verejny board",
+      "user": 0,
+      "id": 18655014692,
+      "starred": false,
+      "created": "2022-11-21"
+    },
+    {
+      "name": "private board",
+      "user": 1,
+      "id": 56202253883,
+      "starred": false,
+      "created": "2022-11-21"
     }
   ],
   "tasks": [
