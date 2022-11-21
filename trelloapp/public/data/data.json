@@ -8,7 +8,40 @@
       "created": "2022-11-21"
     }
   ],
-  "tasks": [],
+  "tasks": [
+    {
+      "title": "chlieb",
+      "listId": 56705074924,
+      "boardId": 81199267822,
+      "id": 52454753895,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24"
+    },
+    {
+      "title": "mlieko",
+      "listId": 56705074924,
+      "boardId": 81199267822,
+      "id": 29540097614,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24"
+    },
+    {
+      "title": "pivo",
+      "listId": 56705074924,
+      "boardId": 81199267822,
+      "id": 55711920678,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24"
+    },
+    {
+      "title": "syr",
+      "listId": 56705074924,
+      "boardId": 81199267822,
+      "id": 66782288793,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24"
+    }
+  ],
   "users": [],
   "lists": [
     {

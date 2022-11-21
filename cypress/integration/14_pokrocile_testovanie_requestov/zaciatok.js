@@ -1,78 +1,55 @@
 /// <reference types="cypress" />
 
-describe('testovanie casu pomocou momentjs', () => {
+describe("testovanie casu pomocou momentjs", () => {
+  beforeEach(() => {
+    cy.server();
 
-  beforeEach( () => {
+    cy.route("POST", "/api/tasks").as("createTask");
 
-    cy
-      .server()
+    cy.request("DELETE", "/api/tasks");
 
-    cy
-      .route('POST', '/api/tasks')
-      .as('createTask')
+    cy.visit("/board/81199267822");
+  });
 
-    cy
-      .request('DELETE', '/api/tasks')
+  it("vytvoreny task obsahuje datum vytvorenia", () => {
+    cy.contains("Add a card...").click();
 
-    cy
-      .visit('/board/17104542717')
+    cy.get(".List .TextArea").type("chlieb{enter}");
 
-  })
+    cy.wait("@createTask").then((task) => {
+      expect(task.response.body.created).to.eq(
+        Cypress.moment().format("YYYY-MM-DD")
+      );
+    });
+  });
+});
 
-  it('vytvoreny task obsahuje datum vytvorenia', () => {
+const tasks = ["chlieb", "mlieko", "pivo", "syr"];
 
-    cy
-      .contains('Add a card...')
-      .click()
+describe("testovanie taskov pomocou lodash", () => {
+  beforeEach(() => {
+    cy.server();
 
-    cy
-      .get('.List .TextArea')
-      .type('chlieb{enter}')
+    cy.route("/api/boards/*").as("boardDetails");
 
-    cy
-      .wait('@createTask')
+    cy.request("DELETE", "/api/tasks");
 
-  })
+    tasks.forEach((task) => {
+      cy.request("POST", "/api/tasks", {
+        title: task,
+        listId: 56705074924,
+        boardId: 81199267822,
+      });
+    });
 
-})
+    cy.visit("/board/81199267822");
+  });
 
-const tasks = ['chlieb', 'mlieko', 'pivo', 'syr']
+  it("nazvy taskov v liste", () => {
+    cy.wait("@boardDetails").then((board) => {
+      let taskNames = Cypress._.map(board.response.body.tasks, "title");
 
-describe('testovanie taskov pomocou lodash', () => {
-
-  beforeEach( () => {
-
-    cy
-      .server()
-
-    cy
-      .route('/api/boards/*')
-      .as('boardDetails')
-
-    cy
-      .request('DELETE', '/api/tasks')
-
-    tasks.forEach( task => {
-
-      cy
-        .request('POST', '/api/tasks', {
-          title: task,
-          listId: 2779856862,
-          boardId: 17104542717
-        })
-
-    })
-
-    cy
-      .visit('/board/17104542717')
-
-  })
-
-  it('nazvy taskov v liste', () => {
-
-    cy
-      .wait('@boardDetails')
-
-  })
-
-})
+      expect(taskNames).to.deep.eq(tasks);
+    });
+  });
+});

@@ -1,90 +1,58 @@
 /// <reference types="cypress" />
 
-describe('testovanie casu pomocou momentjs', () => {
+describe("testovanie casu pomocou momentjs", () => {
+  beforeEach(() => {
+    cy.server();
 
-  beforeEach( () => {
-    
-    cy
-      .server()
+    cy.route("POST", "/api/tasks").as("createTask");
 
-    cy
-      .route('POST', '/api/tasks')
-      .as('createTask')
+    cy.request("DELETE", "/api/tasks");
 
-    cy
-      .request('DELETE', '/api/tasks')
+    cy.visit("/board/81199267822");
+  });
 
-    cy
-      .visit('/board/')
+  it("vytvoreny task ma deadline o 3 dni", () => {
+    cy.contains("Add a card...").click();
 
-  })
+    cy.get(".List .TextArea").type("chlieb{enter}");
 
-  it('vytvoreny task ma deadline o 3 dni', () => {
+    cy.wait("@createTask").then((task) => {
+      expect(task.response.body.deadline).to.eq(
+        Cypress.moment().add(3, "days").format("YYYY-MM-DD")
+      );
+    });
+  });
+});
 
-    cy
-      .contains('Add a card...')
-      .click()
+const tasks = ["chlieb", "mlieko", "pivo", "syr"];
 
-    cy
-      .get('.List .TextArea')
-      .type('chlieb{enter}')
+describe("testovanie taskov pomocou lodash", () => {
+  beforeEach(() => {
+    cy.server();
 
-    cy
-      .wait('@createTask')
-      .then( task => {
+    cy.route("/api/boards/*").as("boardDetails");
 
+    cy.request("DELETE", "/api/tasks");
 
-      })
-
-  })
-  
-})
-
-const tasks = ['chlieb', 'mlieko', 'pivo', 'syr']
-
-describe('testovanie taskov pomocou lodash', () => {
-
-  beforeEach( () => {
-
-    cy
-      .server()
-
-    cy
-      .route('/api/boards/*')
-      .as('boardDetails')
-    
-    cy
-      .request('DELETE', '/api/tasks')
-    
-    tasks.forEach( task => {
-
-      cy
-        .request('POST', '/api/tasks', { 
-          title: task, 
-          listId: null,
-          boardId: null
-        })
-
-    })
+    tasks.forEach((task) => {
+      cy.request("POST", "/api/tasks", {
+        title: task,
+        listId: 56705074924,
+        boardId: 81199267822,
+      });
+    });
 
     // ⚠️ dopln id boardu
-    cy
-      .visit('/board/')
+    cy.visit("/board/81199267822");
+  });
 
-  })
+  it("nazov druheho tasku v liste", () => {
+    cy.wait("@boardDetails").then((board) => {
+      let taskIndex = Cypress._.findIndex(board.response.body.tasks, {title: 'mlieko'})
 
-  it('nazov druheho tasku v liste', () => {
+      expect(taskIndex).to.deep.eq(1);
+    });
 
-    cy
-      .wait('@boardDetails')
-      .then( board => {
-
-        let taskIndex = ''
-
-        expect(taskIndex).to.eq(1)
-
-      })
-
-  })
-  
-})
+    
+  });
+});
