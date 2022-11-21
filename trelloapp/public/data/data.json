@@ -27,52 +27,16 @@
       "id": 83070376571,
       "starred": false,
       "created": "2022-11-21"
+    },
+    {
+      "name": "task #22",
+      "user": 0,
+      "id": 35080054510,
+      "starred": false,
+      "created": "2022-11-21"
     }
   ],
-  "tasks": [
-    {
-      "boardId": 18655014692,
-      "description": "",
-      "completed": false,
-      "listId": 83807222145,
-      "title": "commnad tasks",
-      "id": 9566273229,
-      "created": "2022-11-21",
-      "deadline": "2022-11-24"
-    },
-    {
-      "boardId": 83070376571,
-      "description": "",
-      "completed": false,
-      "listId": 85302899383,
-      "title": "tasklist2",
-      "id": 19823524703,
-      "created": "2022-11-21",
-      "deadline": "2022-11-24",
-      "order": 0
-    },
-    {
-      "boardId": 83070376571,
-      "description": "",
-      "completed": false,
-      "listId": 85302899383,
-      "title": "1",
-      "id": 68934030871,
-      "created": "2022-11-21",
-      "deadline": "2022-11-24",
-      "order": 1
-    },
-    {
-      "boardId": 83070376571,
-      "description": "",
-      "completed": false,
-      "listId": 34926036844,
-      "title": "tt",
-      "id": 56057148197,
-      "created": "2022-11-21",
-      "deadline": "2022-11-24"
-    }
-  ],
+  "tasks": [],
   "users": [],
   "lists": [
     {
@@ -100,6 +64,12 @@
       "id": 85302899383,
       "created": "2022-11-21",
       "order": 1
+    },
+    {
+      "boardId": 35080054510,
+      "title": "22ist",
+      "id": 56376061276,
+      "created": "2022-11-21"
     }
   ]
 }
