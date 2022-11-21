@@ -4,5 +4,6 @@ it('typescript', () => {
 
   cy
     .visit('/')
+    .addTask()
 
 })
