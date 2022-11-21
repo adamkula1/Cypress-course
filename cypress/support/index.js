@@ -14,11 +14,14 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import "./commands";
 
 // Cypress.Cookies.defaults({
 //     whitelist: 'trello_token'
 //   })
+
+require("@4tw/cypress-drag-drop");
+import 'cypress-file-upload';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

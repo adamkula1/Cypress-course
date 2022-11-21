@@ -20,6 +20,13 @@
       "id": 56202253883,
       "starred": false,
       "created": "2022-11-21"
+    },
+    {
+      "name": "task #20",
+      "user": 0,
+      "id": 83070376571,
+      "starred": false,
+      "created": "2022-11-21"
     }
   ],
   "tasks": [
@@ -32,20 +39,41 @@
       "id": 9566273229,
       "created": "2022-11-21",
       "deadline": "2022-11-24"
-    }
-  ],
-  "users": [
-    {
-      "email": "adamkula97@gmail.com",
-      "password": "$2a$10$W0oEl8vEM3si8x0acN7vyeTPuMsOuOfYQdD45NjSdorfiKxrxj08W",
-      "id": 1
     },
     {
-      "email": "adamCypress@gmail.com",
-      "password": "$2a$10$BGld3g00zE8UXbtzSpLXgOQoJYeCZGotgZnByaBXcewWLHzBkU2WC",
-      "id": 2
+      "boardId": 83070376571,
+      "description": "",
+      "completed": false,
+      "listId": 85302899383,
+      "title": "tasklist2",
+      "id": 19823524703,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24",
+      "order": 0
+    },
+    {
+      "boardId": 83070376571,
+      "description": "",
+      "completed": false,
+      "listId": 85302899383,
+      "title": "1",
+      "id": 68934030871,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24",
+      "order": 1
+    },
+    {
+      "boardId": 83070376571,
+      "description": "",
+      "completed": false,
+      "listId": 34926036844,
+      "title": "tt",
+      "id": 56057148197,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24"
     }
   ],
+  "users": [],
   "lists": [
     {
       "title": "list cez API",
@@ -58,6 +86,20 @@
       "title": "public lists",
       "id": 83807222145,
       "created": "2022-11-21"
+    },
+    {
+      "boardId": 83070376571,
+      "title": "list1",
+      "id": 34926036844,
+      "created": "2022-11-21",
+      "order": 0
+    },
+    {
+      "boardId": 83070376571,
+      "title": "list2",
+      "id": 85302899383,
+      "created": "2022-11-21",
+      "order": 1
     }
   ]
 }

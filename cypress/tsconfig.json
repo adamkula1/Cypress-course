@@ -3,8 +3,16 @@
     "strict": true,
     "baseUrl": "../node_modules",
     "target": "es5",
-    "lib": ["es5", "dom"],
-    "types": ["cypress", "node"]
+    "lib": [
+      "es5",
+      "dom"
+    ],
+    "types": [
+      "cypress",
+      "node",
+      "@4tw/cypress-drag-drop",
+      "cypress-file-upload"
+    ]
   },
   "include": [
     "**/*.ts"
