@@ -1,5 +1,8 @@
 const {resetDatabase} = require('./resetDatabase.js')
 const {resetTasks} = require('./resetTasks.js')
+const dev = require('../../cypress.dev.json')
+const prod = require('../../cypress.prod.json')
+
 
 
 /**
@@ -19,4 +22,6 @@ module.exports = (on, config) => {
       return launchOptions
     }
   })
+//nastavenie url na cypress.dev.json
+  return config.env.configFile = prod
 }
