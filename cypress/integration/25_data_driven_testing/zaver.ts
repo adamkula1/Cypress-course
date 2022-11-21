@@ -18,7 +18,7 @@ lists.forEach((list, index) => {
   it(`skontrolovať ${list.name} zoznam`, () => {
 
     cy
-      .visit('/board/30828651503')
+      .visit('/board/84831843253')
 
     cy
       .get('.List')

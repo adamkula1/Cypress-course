@@ -34,9 +34,77 @@
       "id": 35080054510,
       "starred": false,
       "created": "2022-11-21"
+    },
+    {
+      "name": "task #25",
+      "user": 0,
+      "id": 84831843253,
+      "starred": false,
+      "created": "2022-11-21"
     }
   ],
-  "tasks": [],
+  "tasks": [
+    {
+      "boardId": 84831843253,
+      "description": "",
+      "completed": false,
+      "listId": 38728407203,
+      "title": "odpáliť raketu",
+      "id": 64990815851,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24"
+    },
+    {
+      "boardId": 84831843253,
+      "description": "",
+      "completed": false,
+      "listId": 38728407203,
+      "title": "pobaliť jedlo",
+      "id": 58026282295,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24"
+    },
+    {
+      "boardId": 84831843253,
+      "description": "",
+      "completed": false,
+      "listId": 38728407203,
+      "title": "tlačová správa",
+      "id": 64542174323,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24"
+    },
+    {
+      "boardId": 84831843253,
+      "description": "",
+      "completed": false,
+      "listId": 17342505602,
+      "title": "pripraviť astronautov",
+      "id": 54129000784,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24"
+    },
+    {
+      "boardId": 84831843253,
+      "description": "",
+      "completed": false,
+      "listId": 17342505602,
+      "title": "nastavenie časovaču",
+      "id": 69799274431,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24"
+    },
+    {
+      "boardId": 84831843253,
+      "description": "",
+      "completed": false,
+      "listId": 56129705642,
+      "title": "natankovať",
+      "id": 77395339748,
+      "created": "2022-11-21",
+      "deadline": "2022-11-24"
+    }
+  ],
   "users": [],
   "lists": [
     {
@@ -69,6 +137,24 @@
       "boardId": 35080054510,
       "title": "22ist",
       "id": 56376061276,
+      "created": "2022-11-21"
+    },
+    {
+      "boardId": 84831843253,
+      "title": "to do",
+      "id": 38728407203,
+      "created": "2022-11-21"
+    },
+    {
+      "boardId": 84831843253,
+      "title": "in progress",
+      "id": 17342505602,
+      "created": "2022-11-21"
+    },
+    {
+      "boardId": 84831843253,
+      "title": "completed",
+      "id": 56129705642,
       "created": "2022-11-21"
     }
   ]

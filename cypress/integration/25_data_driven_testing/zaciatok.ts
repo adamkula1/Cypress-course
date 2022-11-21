@@ -13,12 +13,19 @@ const lists = [
   }
 ];
 
-it(`skontrolovať todo zoznam`, () => {
+lists.forEach((list, index) => {
 
-  cy
-    .visit('/board/30828651503')
+  it(`skontrolovať ${list.name} zoznam`, () => {
 
-  cy
-    .get('.List')
-  
-});
+    cy
+      .visit('/board/84831843253')
+
+    cy
+      .get('.List')
+      .eq(index)
+      .find('.Task')
+      .should('have.length', list.tasks.length)
+
+  });
+
+})
