@@ -24,34 +24,12 @@
   ],
   "tasks": [
     {
-      "title": "chlieb",
-      "listId": 56705074924,
-      "boardId": 81199267822,
-      "id": 18205073504,
-      "created": "2022-11-21",
-      "deadline": "2022-11-24"
-    },
-    {
-      "title": "mlieko",
-      "listId": 56705074924,
-      "boardId": 81199267822,
-      "id": 58101051977,
-      "created": "2022-11-21",
-      "deadline": "2022-11-24"
-    },
-    {
-      "title": "pivo",
-      "listId": 56705074924,
-      "boardId": 81199267822,
-      "id": 25940092622,
-      "created": "2022-11-21",
-      "deadline": "2022-11-24"
-    },
-    {
-      "title": "syr",
-      "listId": 56705074924,
-      "boardId": 81199267822,
-      "id": 24775303614,
+      "boardId": 18655014692,
+      "description": "",
+      "completed": false,
+      "listId": 83807222145,
+      "title": "commnad tasks",
+      "id": 9566273229,
       "created": "2022-11-21",
       "deadline": "2022-11-24"
     }
@@ -61,6 +39,11 @@
       "email": "adamkula97@gmail.com",
       "password": "$2a$10$W0oEl8vEM3si8x0acN7vyeTPuMsOuOfYQdD45NjSdorfiKxrxj08W",
       "id": 1
+    },
+    {
+      "email": "adamCypress@gmail.com",
+      "password": "$2a$10$BGld3g00zE8UXbtzSpLXgOQoJYeCZGotgZnByaBXcewWLHzBkU2WC",
+      "id": 2
     }
   ],
   "lists": [
@@ -68,6 +51,12 @@
       "title": "list cez API",
       "boardId": 81199267822,
       "id": 56705074924,
+      "created": "2022-11-21"
+    },
+    {
+      "boardId": 18655014692,
+      "title": "public lists",
+      "id": 83807222145,
       "created": "2022-11-21"
     }
   ]
