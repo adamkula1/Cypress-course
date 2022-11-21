@@ -1,14 +1,21 @@
 {
   "boards": [
     {
-      "name": "heej novy board",
+      "name": "novy board task #13",
       "user": 0,
-      "id": 67117356303,
+      "id": 81199267822,
       "starred": false,
-      "created": "2022-11-20"
+      "created": "2022-11-21"
     }
   ],
   "tasks": [],
   "users": [],
-  "lists": []
+  "lists": [
+    {
+      "title": "list cez API",
+      "boardId": 81199267822,
+      "id": 56705074924,
+      "created": "2022-11-21"
+    }
+  ]
 }

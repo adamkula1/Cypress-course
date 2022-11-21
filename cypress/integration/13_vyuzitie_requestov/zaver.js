@@ -20,7 +20,7 @@ it('otvorenie novovytvoreneho boardu', () => {
     .visit('/board/' + Cypress.env('board')['id']);
 
   cy
-    .get('.board_item .board_title')
-    .should('contains.text', Cypress.env('board')['name'])
+    .get('.boardDetail_info input')
+    .should('have.value', Cypress.env('board')['name'])
 
 })

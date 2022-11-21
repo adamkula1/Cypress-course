@@ -1,20 +1,20 @@
 /// <reference types="cypress" />
 
-beforeEach( () => {
+beforeEach(() => {
+  cy.request("POST", "/api/reset");
 
-  cy
-    .request('POST', '/api/reset')
+  cy.request("POST", "/api/boards", {
+    name: "board create cez api",
+  }).then((board) => {
+    Cypress.env("board", board.body);
+  });
+});
 
-  cy
-    .request('POST', '/api/boards', {
-      name: 'board vytvoreny cez api'
-    })
+it("otvorenie novovytvoreneho boardu", () => {
+  cy.visit("/board/" + Cypress.env("board")["id"]);
 
-})
-
-it('otvorenie novovytvoreneho boardu', () => {
-
-   cy
-    .visit('/')
-
-})
+  cy.get(".boardDetail_info input").should(
+    "have.value",
+    Cypress.env("board")["name"]
+  );
+});
